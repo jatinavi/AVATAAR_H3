@@ -56,7 +56,7 @@ if __name__ == "__main__":
     
     # Define common arguments
     parser.add_argument('--image', type=str, required=True, help="Path to the input image")
-    parser.add_argument('--class', type=str, required=True, help="Object class to segment")
+    parser.add_argument('--object_class', type=str, required=True, help="Object class to segment")
     parser.add_argument('--output', type=str, required=True, help="Path to save the output image")
 
     # Define task-specific arguments
@@ -67,6 +67,6 @@ if __name__ == "__main__":
 
     # If x or y is provided, perform shifting, otherwise do segmentation only
     if args.x != 0 or args.y != 0:
-        shift_object(args.image, args.class, args.x, args.y, args.output)
+        shift_object(args.image, args.object_class, args.x, args.y, args.output)
     else:
         segment_object(args.image, args.class, args.output)
