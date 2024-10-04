@@ -54,12 +54,10 @@ def shift_object(image_path, class_prompt, x_shift, y_shift, output_path):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Segment and shift objects in an image")
     
-    # Define common arguments
+    # Define arguments
     parser.add_argument('--image', type=str, required=True, help="Path to the input image")
     parser.add_argument('--object_class', type=str, required=True, help="Object class to segment")
     parser.add_argument('--output', type=str, required=True, help="Path to save the output image")
-
-    # Define task-specific arguments
     parser.add_argument('--x', type=int, default=0, help="Pixels to shift the object horizontally")
     parser.add_argument('--y', type=int, default=0, help="Pixels to shift the object vertically")
 
@@ -69,4 +67,5 @@ if __name__ == "__main__":
     if args.x != 0 or args.y != 0:
         shift_object(args.image, args.object_class, args.x, args.y, args.output)
     else:
-        segment_object(args.image, args.object_class, args.output)  # Fixed here
+        segment_object(args.image, args.object_class, args.output)
+
