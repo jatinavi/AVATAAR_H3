@@ -1,0 +1,11 @@
+Running the Project
+To Segment an Object (Task 1): Run this command to perform object segmentation. It will output an image with the object highlighted in red.
+
+bash
+Copy code
+python run.py --image ./images/example.jpg --class "shelf" --output ./output_images/segmented_output.png
+To Shift an Object (Task 2): Run this command to shift the segmented object. Specify the number of pixels to move horizontally (x) and vertically (y).
+
+bash
+Copy code
+python run.py --image ./images/example.jpg --class "shelf" --x 100 --y 50 --output ./output_images/shifted_output.png
