@@ -69,4 +69,4 @@ if __name__ == "__main__":
     if args.x != 0 or args.y != 0:
         shift_object(args.image, args.object_class, args.x, args.y, args.output)
     else:
-        segment_object(args.image, args.class, args.output)
+        segment_object(args.image, args.object_class, args.output)  # Fixed here
