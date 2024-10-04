@@ -73,9 +73,9 @@ Alternatively, you can manually install the dependencies:
 pip install transformers Pillow numpy
 ```
 
-### **3. (Optional) Run on Google Colab**
+### **3.  Run on Google Colab**
 If you want to run the project on **Google Colab** for free GPU access, use the Colab notebook linked below:
-- [Colab Link]([https://colab.research.google.com/drive/your-colab-link](https://colab.research.google.com/drive/1W1No907M5iVHcVTdCySoddAvb_Njy6ha?usp=sharing))
+- [Colab Link](https://colab.research.google.com/drive/1W1No907M5iVHcVTdCySoddAvb_Njy6ha?usp=share_link)
 
 ---
 
