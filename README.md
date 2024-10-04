@@ -192,11 +192,6 @@ Feel free to submit pull requests or open issues for feature requests, improveme
 
 ---
 
-## **Live Demo**
-Want to try it out? Visit our [Live Demo](https://your-demo-link.com) to segment and manipulate objects in real time!
-
----
-
 ### **Conclusion**
 This project highlights the potential of object segmentation and manipulation using pre-trained models like SAM. It has diverse applications ranging from automated product photography to real-time object detection in autonomous driving systems.
 
